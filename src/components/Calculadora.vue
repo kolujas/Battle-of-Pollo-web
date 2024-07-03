@@ -3,9 +3,9 @@
       <div class="max-w-md w-full p-6 rounded-lg md:shadow-2xl mt-8 md:mt-0">
         <h2 class="text-center text-2xl font-bold mb-4 text-black">Calculadora de daño</h2>
         <div class="grid grid-cols-1 gap-4">
-          <input class="bg-gray-600 hover:bg-gray-500 outline-none h-10 rounded pl-2 w-full text-white font-medium" type="text" v-model="ataque" @input="validarEntrada($event, false)" placeholder="Ingresá cuanto daño hiciste" id="ataque">
-          <input class="bg-gray-600 hover:bg-gray-500 outline-none h-10 rounded pl-2 w-full text-white font-medium" type="text" v-model="defensa" @input="validarEntrada($event, false)" placeholder="Ingresá la defensa del enemigo" id="defensa">
-          <input class="bg-gray-600 hover:bg-gray-500 outline-none h-10 rounded pl-2 w-full text-white font-medium" type="text" v-model="probabilidad" @input="validarEntrada($event, true)" placeholder="Ingresá el % de aumento de daño" id="probabilidad">
+          <input class="bg-gray-600 hover:bg-gray-500 outline-none h-10 rounded pl-2 w-full text-white font-medium" type="text" v-model="ataque" @input="validarEntrada($event, false)" placeholder="Ingresá cuanto daño hiciste" id="ataque" autocomplete="off">
+          <input class="bg-gray-600 hover:bg-gray-500 outline-none h-10 rounded pl-2 w-full text-white font-medium" type="text" v-model="defensa" @input="validarEntrada($event, false)" placeholder="Ingresá la defensa del enemigo" id="defensa" autocomplete="off">
+          <input class="bg-gray-600 hover:bg-gray-500 outline-none h-10 rounded pl-2 w-full text-white font-medium" type="text" v-model="probabilidad" @input="validarEntrada($event, true)" placeholder="Ingresá el % de aumento de daño" id="probabilidad" autocomplete="off">
           <span class="text-xl font-bold text-black">Daño: {{ daño }}</span>
         </div>
         <div class="grid grid-cols-2 gap-4 mt-4">
